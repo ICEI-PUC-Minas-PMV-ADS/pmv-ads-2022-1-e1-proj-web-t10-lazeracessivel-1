@@ -39,12 +39,12 @@ body * {
     width: 15vw;
 }
 .Fundo{
-    position: relative;
+    position: fixed;
     width: 50vw;
     height: 100vh;
 }
 .Logobranca{
-    position: absolute;
+    position: fixed;
     width: 20vw;
 }
 .LogoGoogle{
@@ -110,6 +110,7 @@ body * {
     color: white;
     background: black;
     cursor: pointer;
+    text-align: center;
 }
 .botao-login:hover{
     background-color:#4682B4;
@@ -144,6 +145,7 @@ body * {
 .link-registro:hover {
     color: blue;
 }
+
 @media only screen and (max-width: 950px){
     .card-login{
         width: 100%

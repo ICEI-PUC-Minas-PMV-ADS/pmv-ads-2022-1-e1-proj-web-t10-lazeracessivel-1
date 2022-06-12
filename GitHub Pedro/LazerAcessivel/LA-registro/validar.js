@@ -47,7 +47,7 @@ function validar() {
         else {
             alert("Registrado com sucesso!")
             document.addEventListener('submit', salvarForm)
-            window.location.href = "C:\Users\ertal\Desktop\LazerAcessivel\LA-login\teladeloginla.html"
+            window.location.href = "C:\Users\ertal\Desktop\LazerAcessivel\LA-login\teladeloginla.html"  
         }   
     }
 
