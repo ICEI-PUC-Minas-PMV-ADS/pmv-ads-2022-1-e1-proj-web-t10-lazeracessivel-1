@@ -1,0 +1,312 @@
+@media(max-width: 2000px){
+    .cardLocalR{
+        width: 20vw;
+        height: 40vh;
+        margin-left: 5vw;
+    }
+}
+
+@media(max-width: 1850px){
+    /*sessão de Locais Recomendados*/
+    .cardLocalR{
+        width: 20vw;
+        height: 36vh;
+        margin-left: 5vw;
+    }
+} 
+
+@media(max-width: 1600px){
+    /*sessão de Locais Recomendados*/
+    .cardLocalR{
+        width: 20vw;
+        height: 34vh;
+        margin-left: 5vw;
+    }
+} 
+
+@media(max-width: 1500px){
+    /*sessão de Locais Recomendados*/
+    .cardLocalR{
+        width: 25vw;
+        height: 43vh;
+        margin-left: 5vw;
+    }
+    .cardLocalR-img img{
+        width: 25vw;
+    }
+} 
+
+@media(max-width: 1400px){
+    /*sessão de Locais Recomendados*/
+    .cardLocalR{
+        width: 25vw;
+        height: 40vh;
+        margin-left: 5vw;
+    }
+    .cardLocalR-img img{
+        width: 25vw;
+    }
+} 
+
+@media(max-width: 1300px){
+    .bannerCampoDeBusca{
+        padding: 1.5vh 1.5vw;
+    }
+
+    /*configuração dos cards*/
+    .containerCards{
+        margin-top: 8vh;
+    }
+    
+    /*sessão de informações*/
+    .cardInfo{
+        width: 20vw;
+        height: 20vh;
+    }
+    #img-busque, #img-avalie, #img-desfrute{
+        bottom: 10vh;
+    }
+    .cardInfo-texto{
+        padding: 5vh 2vw;
+    }
+    .cardInfo-texto h2{
+        margin-bottom: 3.5vh;
+    }
+
+
+    /*sessão de Locais Recomendados*/
+    .cardLocalR-titulo{
+        margin-top: 8vh;
+    }
+    .cardLocalR{
+        width: 25vw;
+        height: 38vh;
+        margin-left: 5vw;
+    }
+    .cardLocalR-img img{
+        width: 25vw;
+    }
+    .cardLocalR-nome h3{
+        margin: 0.8vh 1vw 1.8vh 1vw;
+    }
+}
+@media(max-width: 1100px){
+    .bannerCampoDeBusca{
+        width: 46vw;
+    }
+
+
+    /*sessão de Locais Recomendados*/
+    .cardLocalR{
+        width: 25vw;
+        height: 34vh;
+        margin-left: 5vw;
+    }
+}
+
+
+@media(max-width: 940px){
+    /*sessão de Locais Recomendados*/
+    .cardLocalR{
+        height: 31vh;
+    }
+
+} 
+
+@media(max-width: 770px){
+    header{
+        height: 8vh;
+    }
+    #logo{
+        width: 8%;
+    }
+
+    /*Menu responsivo*/
+    #menu{
+        display: none;
+    }
+    
+
+    .bannerPrincipal{
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        height: 50vw;
+    }
+    #bannerIlusra img{
+        display: none;
+    }
+    #banner-texto h1{
+        font-size: 4vw;
+    }
+    #banner-texto p{
+        width: 80vw;
+        font-size: 2vw;
+    }
+    
+    .bannerCampoDeBusca{
+        width: 90vw;
+        padding: 2.5vh 1.5vw;
+    }
+    #input input{
+        background: url(https://api.iconify.design/ei/search.svg?color=%23777&height=1) no-repeat left center / contain;
+        background-size: 5vw;
+    }
+    .filtros form select{
+        font-size: 2vw;
+        width: 16vw;
+        margin-right: 2vw;
+    }
+    .bannerCampoDeBusca button{
+        font-size: 2vw;
+        padding: 1.3vh 2.5vw;
+        margin-left: 2vw;
+    }
+    
+    
+    .infoContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3vh;
+        margin: 0vh 0vw 7vh 0;
+    }
+    .cardInfo{
+        width: 50vw;
+        height: 35vh;
+    }
+    
+    .cardInfo-img{
+        padding: 3vw;
+    }
+    .cardInfo-img img{
+        width: 4.5vw;
+    }
+    #img-busque, #img-avalie, #img-desfrute{
+        position: relative;
+        top: 7vh;
+        left: 1vw;
+        z-index: 1;
+    }
+    
+    .cardInfo-texto{
+        padding: 10vh 5vw;
+
+    }
+    .cardInfo-texto h2{
+        font-size: 3vw;
+        margin-bottom: 5vh;
+    }
+    .cardInfo-texto p{
+        font-size: 2vw;
+    }
+    
+    
+    .containerCards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5vh;
+        margin: 11vh 0;
+    }
+    .cardLocalR-titulo h2{
+        font-size: 3vw;
+    }
+    .cardLocalR-titulo a{
+        font-size: 2vw;
+    }
+    
+    .cardLocalR{
+        width: 50vw;
+        height: 40vh;
+        margin-left: 0;
+    }
+    .cardLocalR-img img{
+        width: 50vw;
+    }
+    .cardLocalR-nome h3{
+        font-size: 3vw;
+        margin: 1.5vh 3vw 4vh 3vw ;
+    }
+    #museu h3{
+        margin: 1.5vh 3vw 2vh 3vw ;
+    }
+    .cardLocalR-tags{
+        display: flex;
+        align-items: center;
+    }
+    .tag{
+        background-color: var(--tagColor);
+        padding: 0.7vh 0.5vw;
+        margin: 0 0 4vh 2vw;
+        border-radius: 5px;
+    }
+    .tag p{
+        font-size: 2vw;
+    }
+    .linkVerMais{
+        font-size: 1.8vw;
+    }
+    
+    #empresas{
+        justify-content: start;
+        height: 34vh;
+    }
+    .empresas-texto h2{
+        margin: 2vh 0 1vh 0;
+        font-size: 3vw;
+    }
+    .empresas-texto p{
+        width: 80vw;
+        margin-bottom: 5vh;
+        font-size: 2vw;
+        font-weight: 200;
+    }
+    
+    #rodape{
+        font-size: 1.8vw;
+    }
+    
+    
+    /*estilização do modal pop-up*/
+
+    .modalCard-conteudo{
+        margin: 5vw;
+    }
+    .conteudo-img img{
+        position: relative;
+        top: -30px;
+        left: -30px;
+        z-index: 1;
+        width: 112%;
+    }
+    .conteudo-titulo{
+        position: absolute;
+        top: 18vh;
+        font-size: 3vw;
+        color: #000;
+    }
+    
+    .conteudo-infos{
+        margin-top: 6vh;
+    }
+    .conteudo-infos h4{
+        margin-bottom: 15px;
+    }
+    .conteudo-infos h4, .conteudo-infos strong{
+        font-size: 2vw;
+    }
+    .conteudo-infos p{
+        font-size: 1.8vw;
+    }
+    .conteudoInfos-tags{
+        display: flex;
+    }
+    .conteudoInfos-tags p{
+        margin-right: 15px;
+        padding: 5px 10px;
+        background-color: var(--tagColor);
+        border-radius: 5px;
+    }
+}
