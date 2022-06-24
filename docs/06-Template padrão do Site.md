@@ -10,6 +10,7 @@ Os templates desenvolvidos são correspondentes às interfaces do projeto elabor
  
 
 A Home Page é a página principal do nosso projeto, contendo a parte de busca, de login do cliente, de registro de usuário, e os locais com suas avaliações. 
+
 ![homepage](https://user-images.githubusercontent.com/53317747/175436783-a2d49a8d-f4c7-400b-9a48-157e87430c84.jpeg)
 ![homepage2](https://user-images.githubusercontent.com/53317747/175436786-0027706b-839e-4c02-b683-d6f18b5caaa4.jpeg)
 
