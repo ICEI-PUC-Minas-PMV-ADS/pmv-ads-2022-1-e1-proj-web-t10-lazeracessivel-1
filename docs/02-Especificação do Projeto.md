@@ -45,6 +45,7 @@ O escopo funcional do projeto é definido por meio dos requisitos funcionais que
 |RF-006| Aba de classificação para a avaliação dos usuários | ALTA |
 |RF-007| O site deve permitir salvar locais como favoritos | BAIXA |
 |RF-008| Em cada local cadastrado será obrigatório conter quais acessibilidades oferece e quais não | ALTA |
+|RF-009| Aplicar as ferramentas especiais em todas as páginas (VLibras) | ALTA |
 
 
 ### Requisitos não Funcionais
