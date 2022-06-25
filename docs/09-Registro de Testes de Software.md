@@ -1,12 +1,15 @@
 # Registro de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
+Os resultados obtidos nos testes de software realizados são descritos abaixo.
 
-Relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado em um plano de testes pré-definido.
+<h2> Edge </h2>
 
-## Avaliação
+![edge](https://user-images.githubusercontent.com/53317747/175750377-a929b62d-33e2-4533-8836-221e96c6ffc8.jpeg)
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
+<h2> Google Chrome </h2>
 
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
+![chrome](https://user-images.githubusercontent.com/53317747/175750389-6a87570b-5754-4138-813f-a4a6e8f9ef5a.jpeg)
+
+<h2> Firefox </h2>
+
+![firefox](https://user-images.githubusercontent.com/53317747/175750400-180fe8c6-04f5-4fcc-985d-d89d2a75d40f.jpeg)
