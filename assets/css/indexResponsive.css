@@ -1,5 +1,5 @@
 @media(max-width: 2000px){
-    .cardLocalR{
+    .cardLocaisR{
         width: 20vw;
         height: 40vh;
         margin-left: 5vw;
@@ -8,7 +8,7 @@
 
 @media(max-width: 1850px){
     /*sessão de Locais Recomendados*/
-    .cardLocalR{
+    .cardLocaisR{
         width: 20vw;
         height: 36vh;
         margin-left: 5vw;
@@ -17,7 +17,7 @@
 
 @media(max-width: 1600px){
     /*sessão de Locais Recomendados*/
-    .cardLocalR{
+    .cardLocaisR{
         width: 20vw;
         height: 34vh;
         margin-left: 5vw;
@@ -26,24 +26,24 @@
 
 @media(max-width: 1500px){
     /*sessão de Locais Recomendados*/
-    .cardLocalR{
+    .cardLocaisR{
         width: 25vw;
-        height: 43vh;
+        height: 42vh;
         margin-left: 5vw;
     }
-    .cardLocalR-img img{
+    .cardLocaisR-img img{
         width: 25vw;
     }
 } 
 
 @media(max-width: 1400px){
     /*sessão de Locais Recomendados*/
-    .cardLocalR{
+    .cardLocaisR{
         width: 25vw;
         height: 40vh;
         margin-left: 5vw;
     }
-    .cardLocalR-img img{
+    .cardLocaisR-img img{
         width: 25vw;
     }
 } 
@@ -58,13 +58,14 @@
         margin-top: 8vh;
     }
     
+    
     /*sessão de informações*/
     .cardInfo{
         width: 20vw;
-        height: 20vh;
+        height: 25vh;
     }
-    #img-busque, #img-avalie, #img-desfrute{
-        bottom: 10vh;
+    .cardInfo-img{
+        bottom: 14vh;
     }
     .cardInfo-texto{
         padding: 5vh 2vw;
@@ -72,23 +73,32 @@
     .cardInfo-texto h2{
         margin-bottom: 3.5vh;
     }
+    .cardInfo-texto p{
+        font-size: 1vw;
+    }
 
 
     /*sessão de Locais Recomendados*/
-    .cardLocalR-titulo{
+    .cardLocaisR-titulo{
         margin-top: 8vh;
     }
-    .cardLocalR{
+    .cardLocaisR{
         width: 25vw;
         height: 38vh;
         margin-left: 5vw;
     }
-    .cardLocalR-img img{
+    .cardLocaisR-img img{
         width: 25vw;
     }
-    .cardLocalR-nome h3{
+    .cardLocaisR-nome h3{
         margin: 0.8vh 1vw 1.8vh 1vw;
     }
+
+    /*pop-up*/
+    .conteudo-titulo{
+        top: 22vh;
+    }
+
 }
 @media(max-width: 1100px){
     .bannerCampoDeBusca{
@@ -97,100 +107,139 @@
 
 
     /*sessão de Locais Recomendados*/
-    .cardLocalR{
+    .cardLocaisR{
         width: 25vw;
         height: 34vh;
         margin-left: 5vw;
+    }
+
+
+    /*SEÇÃO PARA EMPRESAS*/
+    .texto-paraEmpresas h2{
+        font-size: 1.5vw;
+    }
+    .texto-paraEmpresas p{
+        font-size: 1vw;
+    }
+    
+    .texto-direito h2{
+        margin: 2vh 0 3vh 0;
+        font-size: 1.5vw;
+    }
+    .texto-direito h3{
+        margin: 1vh 0;
+        font-size: 1.2vw;
+        font-weight: 500;
+    }
+    .texto-direito p{
+        font-size: 1vw;
+    }
+
+    .conteudo-titulo{
+        top: 18vh;
     }
 }
 
 
 @media(max-width: 940px){
     /*sessão de Locais Recomendados*/
-    .cardLocalR{
+    .cardLocaisR{
         height: 31vh;
     }
 
+    .conteudo-titulo{
+        top: 15vh;
+    }
 } 
 
 @media(max-width: 770px){
+    /*CABEÇALHO*/
     header{
-        height: 8vh;
+        height: 10vh;
     }
-    #logo{
-        width: 8%;
+    .logo{
+        width: 15%;
     }
 
-    /*Menu responsivo*/
-    #menu{
+    /*MENU RESPONSIVO*/
+    .menu{
         display: none;
     }
-    
+    .menuResponsive-container{
+        display: block;
+    }
 
+
+    /*BANNER PRINCIPAL*/
     .bannerPrincipal{
         justify-content: center;
         align-items: center;
         flex-direction: row-reverse;
-        height: 50vw;
+        height: 65vw;
     }
-    #bannerIlusra img{
+
+    .banner-ilustracao img{
         display: none;
     }
-    #banner-texto h1{
+
+    .banner-texto h1{
         font-size: 4vw;
     }
-    #banner-texto p{
+    .banner-texto p{
         width: 80vw;
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
     
+
+    /*CAMPO DE BUSCA*/
     .bannerCampoDeBusca{
         width: 90vw;
         padding: 2.5vh 1.5vw;
     }
-    #input input{
-        background: url(https://api.iconify.design/ei/search.svg?color=%23777&height=1) no-repeat left center / contain;
-        background-size: 5vw;
+
+    .campoDeBusca-img img{
+        width: 4vw;
     }
+
     .filtros form select{
-        font-size: 2vw;
         width: 16vw;
         margin-right: 2vw;
+        font-size: 2.5vw;
     }
-    .bannerCampoDeBusca button{
-        font-size: 2vw;
+    .campoDeBusca-btnBuscar{
+        font-size: 2.5vw;
         padding: 1.3vh 2.5vw;
         margin-left: 2vw;
     }
     
     
-    .infoContainer{
+    /*SEÇÃO DE INFORMAÇÕES (busque, desfrute e avalie)*/
+    .info-container{
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 3vh;
         margin: 0vh 0vw 7vh 0;
     }
-    .cardInfo{
-        width: 50vw;
-        height: 35vh;
-    }
-    
+
     .cardInfo-img{
         padding: 3vw;
-    }
-    .cardInfo-img img{
-        width: 4.5vw;
-    }
-    #img-busque, #img-avalie, #img-desfrute{
         position: relative;
         top: 7vh;
         left: 1vw;
         z-index: 1;
     }
+    .cardInfo-img img{
+        width: 4.5vw;
+    }
+
+    .cardInfo{
+        width: 50vw;
+        height: 38vh;
+    }
     
     .cardInfo-texto{
-        padding: 10vh 5vw;
+        padding: 8vh 5vw;
 
     }
     .cardInfo-texto h2{
@@ -198,10 +247,11 @@
         margin-bottom: 5vh;
     }
     .cardInfo-texto p{
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
     
     
+    /*LOCAIS RECOMENDADOS*/
     .containerCards{
         display: flex;
         flex-direction: column;
@@ -210,67 +260,346 @@
         gap: 5vh;
         margin: 11vh 0;
     }
-    .cardLocalR-titulo h2{
-        font-size: 3vw;
+
+    .LocaisRecomend-titulo h2{
+        font-size: 3.54vw;
     }
-    .cardLocalR-titulo a{
-        font-size: 2vw;
+    .LocaisRecomend-titulo a{
+        font-size: 2.5vw;
     }
     
-    .cardLocalR{
-        width: 50vw;
-        height: 40vh;
+    .cardLocaisR{
+        width: 60vw;
+        height: 55vh;
         margin-left: 0;
     }
-    .cardLocalR-img img{
-        width: 50vw;
+    .cardLocaisR-img img{
+        width: 60vw;
     }
-    .cardLocalR-nome h3{
+    .cardLocaisR-nome h3{
         font-size: 3vw;
         margin: 1.5vh 3vw 4vh 3vw ;
     }
     #museu h3{
-        margin: 1.5vh 3vw 2vh 3vw ;
-    }
-    .cardLocalR-tags{
-        display: flex;
-        align-items: center;
+        margin: 1.5vh 3vw 3vh 3vw ;
     }
     .tag{
         background-color: var(--tagColor);
-        padding: 0.7vh 0.5vw;
+        padding: 0.7vh 1vw;
         margin: 0 0 4vh 2vw;
         border-radius: 5px;
     }
     .tag p{
-        font-size: 2vw;
+        font-size: 2.4vw;
     }
     .linkVerMais{
-        font-size: 1.8vw;
+        font-size: 2.5vw;
     }
     
-    #empresas{
+
+    /*SEÇÃO PARA EMPRESAS*/
+    .empresas{
         justify-content: start;
-        height: 34vh;
+        height: 70vh;
+        background: url("/assets/img/bg-empresas.png") no-repeat;
+        background-size: 180%;
     }
-    .empresas-texto h2{
-        margin: 2vh 0 1vh 0;
+    .texto-paraEmpresas h2{
+        margin: 2vh 0 2vh 0;
+        font-size: 3.5vw;
+    }
+    .texto-paraEmpresas p{
+        width: 80vw;
+        margin-bottom: 2vh;
+        font-size: 2.5vw;
+        font-weight: 300;
+    }
+    .texto-direito h2{
+        margin-bottom: 2vh;
+        font-size: 3.5vw;
+    }
+    .texto-direito h3{
+        margin-bottom: 1vh;
         font-size: 3vw;
     }
-    .empresas-texto p{
+    .texto-direito p{
         width: 80vw;
-        margin-bottom: 5vh;
-        font-size: 2vw;
-        font-weight: 200;
+        margin-bottom: 2vh;
+        font-size: 2.5vw;
+        font-weight: 300;
     }
-    
-    #rodape{
-        font-size: 1.8vw;
+    .texto-direito p:last-child{
+        width: 80vw;
+        margin-bottom: 2vh;
+        font-size: 2.5vw;
+        font-weight: 300;
+    }
+
+    /*RODAPE*/
+    .rodape{
+        font-size: 2.5vw;
     }
     
     
     /*estilização do modal pop-up*/
 
+    .modalCard-conteudo{
+        margin: 5vw;
+    }
+    .conteudo-img img{
+        position: relative;
+        top: -30px;
+        left: -30px;
+        z-index: 1;
+        width: 112%;
+    }
+    .conteudo-titulo{
+        position: absolute;
+        top: 25vh;
+        font-size: 2.8vw;
+        color: #000;
+    }
+    
+    .conteudo-infos{
+        margin-top: 6vh;
+    }
+    .conteudo-infos h4{
+        margin-bottom: 15px;
+    }
+    .conteudo-infos h4, .conteudo-infos strong{
+        font-size: 2vw;
+    }
+    .conteudo-infos p{
+        font-size: 1.8vw;
+    }
+    .conteudoInfos-tags{
+        display: flex;
+    }
+    .conteudoInfos-tags p{
+        margin-right: 15px;
+        padding: 5px 10px;
+        background-color: var(--tagColor);
+        border-radius: 5px;
+    }
+}
+@media(max-width: 645px){
+    /*estilização do modal pop-up*/
+
+    .modalCard-conteudo{
+        margin: 5vw;
+    }
+    .modalCard {
+        width: 30%;
+        height: 80%;
+        position: relative;
+        border-radius: 5px;
+        background-color: var(--bgColor);
+    }
+    .conteudo-img img{
+        position: relative;
+        top: -30px;
+        left: -30px;
+        z-index: 1;
+        width: 112%;
+    }
+    .conteudo-titulo{
+        position: absolute;
+        top: 25vh;
+        font-size: 2.8vw;
+        color: #000;
+    }
+    
+    .conteudo-infos{
+        margin-top: 6vh;
+    }
+    .conteudo-infos h4{
+        margin-bottom: 15px;
+    }
+    .conteudo-infos h4, .conteudo-infos strong{
+        font-size: 2vw;
+    }
+    .conteudo-infos p{
+        font-size: 1.8vw;
+    }
+    .conteudoInfos-tags{
+        display: flex;
+    }
+    .conteudoInfos-tags p{
+        margin-right: 15px;
+        padding: 5px 10px;
+        background-color: var(--tagColor);
+        border-radius: 5px;
+    }
+}
+
+@media(max-width: 415px){
+    /*CABEÇALHO*/
+    header{
+        height: 8vh;
+        justify-content: space-between;
+    }
+    .logo{
+        width: 18%;
+        margin-left: 5vw;
+    }
+
+
+    /*BANNER PRINCIPAL*/
+    .bannerPrincipal{
+        height: 100vw;
+    }
+
+    .banner-texto h1{
+        font-size: 5.5vw;
+    }
+    .banner-texto p{
+        width: 80vw;
+        font-size: 3.5vw;
+    }
+    
+
+    /*CAMPO DE BUSCA*/
+    .bannerCampoDeBusca{
+        padding: 1.5vh 1vw;
+    }
+
+    .campoDeBusca-img{
+        display: none;
+    }
+
+    .filtros form select{
+        width: 20vw;
+        font-size: 3.2vw;
+    }
+    .campoDeBusca-btnBuscar{
+        font-size: 3.2vw;
+        padding: 1vh 2.5vw;
+    }
+    
+    
+    /*SEÇÃO DE INFORMAÇÕES (busque, desfrute e avalie)*/
+    .info-container{
+        gap: 2vh;
+        margin-bottom: 2vh;
+    }
+
+    .cardInfo-img{
+        padding: 5vw;
+        top: 5vh;
+    }
+    .cardInfo-img img{
+        width: 5.5vw;
+    }
+
+    .cardInfo{
+        width: 55vw;
+        height: 30vh;
+    }
+    
+    .cardInfo-texto{
+        padding: 6vh 5vw;
+    }
+    .cardInfo-texto h2{
+        font-size: 4vw;
+        margin-bottom: 3vh;
+    }
+    .cardInfo-texto p{
+        font-size: 3.5vw;
+    }
+    
+    
+    /*LOCAIS RECOMENDADOS*/
+
+    .LocaisRecomend-titulo h2{
+        font-size: 4.2vw;
+    }
+    .LocaisRecomend-titulo a{
+        font-size: 3vw;
+    }
+    
+    .cardLocaisR{
+        width: 65vw;
+        height: 35vh;
+        margin-left: 0;
+    }
+    .cardLocaisR-img img{
+        width: 65vw;
+    }
+    .cardLocaisR-nome h3{
+        font-size: 4vw;
+        margin: 1.5vh 3vw 3vh 3vw ;
+    }
+    #museu h3{
+        margin: 1.5vh 3vw 2vh 3vw ;
+    }
+    .cardLocaisR-tags{
+        display: flex;
+        align-items: center;
+    }
+    .tag{
+        background-color: var(--tagColor);
+        padding: 0.7vh 0.9vw;
+        margin-left: 3vw;
+        margin-bottom: 2vh;
+        border-radius: 5px;
+    }
+    .tag p{
+        font-size: 2.5vw;
+        font-weight: 400;
+    }
+    .linkVerMais{
+        font-size: 3vw;
+    }
+    
+
+    /*SEÇÃO PARA EMPRESAS*/
+    .empresas{
+        height: 55vh;
+        background-size: 300%;
+    }
+    .texto-paraEmpresas h2{
+        margin: 2vh 0 1.5vh 0;
+        font-size: 4.5vw;
+    }
+    .texto-paraEmpresas p{
+        width: 83vw;
+        margin-bottom: 2.5vh;
+        font-size: 3vw;
+        font-weight: 300;
+    }
+    .texto-direito h2{
+        margin-bottom: 1vh;
+        font-size: 4.5vw;
+    }
+    .texto-direito h3{
+        margin-bottom: 1.5vh;
+        font-size: 3.5vw;
+    }
+    .texto-direito p{
+        width: 80vw;
+        margin-bottom: 2vh;
+        font-size: 3vw;
+        font-weight: 300;
+    }
+    .texto-direito p:last-child{
+        width: 80vw;
+        margin-bottom: 2vh;
+        font-size: 3vw;
+        font-weight: 300;
+    }
+
+    /*RODAPE*/
+    .rodape{
+        font-size: 3vw;
+    }
+    
+    
+    /*estilização do modal pop-up*/
+
+    .modalCard {
+        width: 30%;
+        height: 80%;
+    }
     .modalCard-conteudo{
         margin: 5vw;
     }

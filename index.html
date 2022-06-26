@@ -13,37 +13,59 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="./assets/js/menuResponsivo.js"></script>
     <title>Lazer Acessível</title>
 </head>
 
 <body>
     <header>
-        <img src="./assets/img/Logo.png" alt="logo lazer acessível" id="logo">
+        <img src="./assets/img/Logo.png" alt="logo lazer acessível" class="logo">
 
-        <nav id="menu">
-            <ul id="menu-itens">
-                <li class="menu-item"><a id="inicio" href="./index.html">início</a></li>
-                <li class="menu-item"><a href="#">buscar lugares</a></li>
-                <li class="menu-item"><a href="#">cadastre-se</a></li>
-                <li id="menu-item__button"><a href="#">login</a></li>
+        <nav class="menu">
+            <ul class="menu-listItens">
+                <li class="menu-item"><a class="menu-item_inicio" href="./index.html">início</a></li>
+                <li class="menu-item"><a href="./busca.html">buscar lugares</a></li>
+                <li class="menu-item"><a href="./teladeregistro.html">cadastre-se</a></li>
+                <li class="menu-item_btnLogin"><a href="./teladeloginla.html">login</a></li>
             </ul>
         </nav>
+
+        <!--Menu responsivo-->
+        <div class="menuResponsive-container">
+            <button class="nav-button" onclick="openNav()">
+                <i class="fa-solid fa-bars fa-3x"></i>
+            </button>
+
+            <div id="navResponsive" class="menu-responsive">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <nav class="menu-itens_responsive">
+                    <a href="./index.html">início</a>
+                    <a href="./busca.html">buscar lugares</a>
+                    <a href="./teladeregistro.html">cadastre-se</a>
+                    <a href="./teladeloginla.html">login</a>
+                </nav>
+            </div>
+        </div>
     </header>
 
+
     <main class="bannerPrincipal">
-        <div id="bannerIlusra">
-            <img src="./assets/img/img1.png" alt="ilustração de um grupo de pessoas conversando">
+        <div class="banner-ilustracao">
+            <img src="./assets/img/img1.png" alt="desenho de um grupo de pessoas conversando">
         </div>
-        <div id="banner-container">
-            <div id="banner-texto">
-                <h1>Lorem, ipsum dolor</h1>
-                <p>sit amet consectetur adipisicing elit. Nisi iusto, voluptates quam quaerat nam quod tempora ullam
-                    quibusdam laboriosam eos voluptatibus voluptatum quas. Sunt voluptatum earum iusto qui enim quod.
+
+        <div class="banner-textoContainer">
+            <div class="banner-texto">
+                <h1>Encontre um local para o seu lazer</h1>
+                <p>Aqui no Lazer acessivel você pode encontrar lugares adaptados, perfeitos para você e sua familia terem um momento de lazer.
                 </p>
             </div>
+
             <div class="bannerCampoDeBusca">
-                <div id="input">
-                    <input type="search" name="" id="">
+                <div class="campoDeBusca-img">
+                    <img src="https://api.iconify.design/ei/search.svg?color=%23777&height=30" alt="Lupa">
                 </div>
                 <div class="filtros">
                     <form action="/busca.html" method="get" enctype="application/x-www-form-urlencoded">
@@ -55,6 +77,7 @@
                             <option value="betim">Betim</option>
                             <option value="sp">São Paulo</option>
                         </select>
+
                         <select name="necessidade" id="necessidade" required>
                             <option value="">Acessível a</option>
                             <option value="tds">Todos</option>
@@ -63,6 +86,7 @@
                             <option value="idosos">Idosos</option>
                             <option value="surdos">Surdos</option>
                         </select>
+
                         <select name="categoria" id="categoria">
                             <option value="">Categoria</option>
                             <option value="tds">Todos</option>
@@ -72,64 +96,63 @@
                             <option value="museus">Museus</option>
                             <option value="parques">Parques</option>
                         </select>
-                        <button type="submit">Buscar</button>
+
+                        <button class="campoDeBusca-btnBuscar" type="submit">Buscar</button>
                     </form>
                 </div>
             </div>
         </div>
     </main>
 
-    <div class="infoContainer">
 
-        <div id="img-busque" class="cardInfo-img">
+    <div class="info-container">
+
+        <div class="cardInfo-img">
             <img src="https://api.iconify.design/gis/search-poi.svg?color=%23111&height=30" alt="">
         </div>
         <div class="cardInfo">
             <div class="cardInfo-texto">
                 <h2>Busque um Local</h2>
-                <p>Massa, at mattis porta ipsum morbi vitae tincidunt elit. Faucibus tincidunt elit risus morbi in. Quam
-                    volutpat neque phasellus auctor sapien amet.</p>
+                <p>Busque e encontre um local agradavel e adaptado às suas deficiencias e limitações.</p>
             </div>
         </div>
 
-        <div id="img-desfrute" class="cardInfo-img">
+        <div class="cardInfo-img">
             <img src="https://api.iconify.design/fe/smile-heart.svg?color=%23111&height=30" alt="">
         </div>
         <div class="cardInfo">
             <div class="cardInfo-texto">
                 <h2>Desfrute do Lazer</h2>
-                <p>Massa, at mattis porta ipsum morbi vitae tincidunt elit. Faucibus tincidunt elit risus morbi in. Quam
-                    volutpat neque phasellus auctor sapien amet.</p>
+                <p>Desfrute do seu momento de lazer entre familia e amigos em um local inclusivo, agradavel e seguro.</p>
             </div>
         </div>
 
-        <div id="img-avalie" class="cardInfo-img">
+        <div class="cardInfo-img">
             <img src="https://api.iconify.design/gis/map-star.svg?color=%23111&height=10" alt="">
         </div>
         <div class="cardInfo">
             <div class="cardInfo-texto">
                 <h2>Avalie o Local</h2>
-                <p>Massa, at mattis porta ipsum morbi vitae tincidunt elit. Faucibus tincidunt elit risus morbi in. Quam
-                    volutpat neque phasellus auctor sapien amet.</p>
+                <p>Avalie sua experiencia no lugar nos contando pontos positivos e pontos que poderiam melhorar a inclusão do local.</p>
             </div>
         </div>
     </div>
 
-    <div class="cardLocalR-titulo">
+
+    <div class="LocaisRecomend-titulo">
         <h2>Locais Recomendados</h2>
-        <a href="#">Mais Locais</a>
+        <a href="./busca.html">Mais Locais</a>
     </div>
     
-    <div id="LocaisR" class="containerCards">
-        
-        <div class="cardLocalR card1">
-            <div class="cardLocalR-img">
+    <div class="containerCards">
+        <div class="cardLocaisR card1">
+            <div class="cardLocaisR-img">
                 <img src="./assets/img/resteurante.png" alt="">
             </div>
-            <div class="cardLocalR-nome">
+            <div class="cardLocaisR-nome">
                 <h3>Restaurante BurguerDev</h3>
             </div>
-            <div class="cardLocalR-tags">
+            <div class="cardLocaisR-tags">
                 <div class="tag">
                     <p>Cardápio em Braile</p>
                 </div>
@@ -140,14 +163,14 @@
             <a class="linkVerMais" href="#RestBrDev">Ver mais +</a>
         </div>
 
-        <div class="cardLocalR card2">
-            <div class="cardLocalR-img">
+        <div class="cardLocaisR card2">
+            <div class="cardLocaisR-img">
                 <img src="./assets/img/hotel.png" alt="">
             </div>
-            <div class="cardLocalR-nome">
+            <div class="cardLocaisR-nome">
                 <h3>Hotel Dev</h3>
             </div>
-            <div class="cardLocalR-tags">
+            <div class="cardLocaisR-tags">
                 <div class="tag">
                     <p>Cardápio em Braile</p>
                 </div>
@@ -158,14 +181,14 @@
             <a class="linkVerMais" href="#">Ver mais +</a>
         </div>
 
-        <div class="cardLocalR card3" id="museu">
-            <div class="cardLocalR-img">
+        <div class="cardLocaisR card3" id="museu">
+            <div class="cardLocaisR-img">
                 <img src="./assets/img/museu.png" alt="">
             </div>
-            <div class="cardLocalR-nome">
+            <div class="cardLocaisR-nome">
                 <h3>Museu de Ciências Naturais PUC Minas</h3>
             </div>
-            <div class="cardLocalR-tags">
+            <div class="cardLocaisR-tags">
                 <div class="tag">
                     <p>Cardápio em Braile</p>
                 </div>
@@ -177,21 +200,27 @@
         </div>
     </div>
 
-    <div id="empresas">
-        <div class="empresas-texto">
+    <div class="empresas">
+        <div class="empresas-textoContainer texto-paraEmpresas">
             <h2>Para Empresas</h2>
-            <p>Sit amet, feugiat a massa erat sed aliquam magna lorem. Amet, commodo massa accumsan sagittis.</p>
+            <p>Não fique de fora dessa ação, torne-se agora um estabelecimento inclusivo e adaptado para todos os tipos de pessoas. A mudança começa com vocês.</p>
         </div>
-        <div class="empresas-texto">
+        <div class="empresas-textoContainer texto-direito">
             <h2>Direito ao Lazer</h2>
-            <p>Ultrices diam ligula suspendisse egestas quis sem iaculis. Nunc lacus a pretium feugiat quis sit lectus
-                risus massa. Dictum nibh morbi fermentum, aliquet egestas sem euismod est. In ac dapibus ut sed id
-                mauris, enim. Purus sit diam in a vel massa turpis tellus. Scelerisque praesent sagittis, libero et
-                cursus. Euismod duis et sed felis, nullam.</p>
+            <div class="texto-direito">
+                <h3>Estatuto da Pessoa com Deficiência</h3>
+                <p> Art. 42. A pessoa com deficiência tem direito à cultura, ao esporte, ao turismo e ao lazer em igualdade de oportunidades com as demais pessoas, sendo-lhe garantido o acesso:</p>
+                <p>
+                    I - a bens culturais em formato acessível; <br>
+                    II - a programas de televisão, cinema, teatro e outras atividades culturais e desportivas em formato acessível; e <br>
+                    III - a monumentos e locais de importância cultural e a espaços que ofereçam serviços ou eventos culturais e esportivos.
+                </p>
+            </div>
+            
         </div>
     </div>
 
-    <footer id="rodape">
+    <footer class="rodape">
         <p>Lazer Acessível &copy</p>
     </footer>
 

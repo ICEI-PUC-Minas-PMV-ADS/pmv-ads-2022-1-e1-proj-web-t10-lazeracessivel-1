@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styleregistro.css">
+    <script src="./assets/js/validar.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/login.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <title>Registro | Lazer Acessível</title>
+</head>
+
+<body>
+    <form action="" method="POST" name="formuser">
+        <div class="principal-login">
+            <div class="esquerda-login">
+                <img src="./assets/img/Fundo_Esquerda.png" class="Fundo" alt="Acesibilidade">
+                <img src="./assets/img/Lazeracessivel1.png" class="Logobranca" alt="Logo Lazer Acessível">
+            </div>
+            <div class="direita-login">
+                <div class="card-login">
+                    <img src="./assets/img/Lazeracessivel.png" class="LogoEscura" alt="Lazer Acessível Logotipo">
+                    <br><br>
+                    <div class="principal-text">
+                        <label for="name">Digite o seu nome</label>
+                        <input type="name" placeholder="Digite o seu nome" name="nome" id="nome" class="input">
+                        <br><br>
+                        <label for="date">Data de nascimento</label>
+                        <input type="date" placeholder="Data de nascimento" name="nascimento" id="data" class="input">
+                        <br><br>
+                        <label for="email">Digite seu E-mail</label>
+                        <input type="email" placeholder="Digite o seu e-mail" name="email" id="email" class="input">
+                        <br><br>
+                        <label for="Crie uma senha">Senha</label>
+                        <input type="password" placeholder="Digite uma senha" name="senha" minlength="6" maxlength="20" id="password" class="input">
+                        <br><br>
+                        <label for="Confirme sua senha">Confirme sua senha</label>
+                        <input type="password" placeholder="Confirme sua senha" minlength="6" maxlength="20" id="confirm_password" name="repSenha" class="input">
+                        <br>
+                    </div>
+                    <input type="submit" class="botao-login" value="cadastrar" name="submit" onclick="validar()" onclick="salvar()">
+                    <p class="Other">Já possui uma conta? <a href="./teladeloginla.html" class="link-login" name="linkLogin">Clique aqui</a></p>
+                    <div class="Final">
+                        <h1 class="Other">Acesse com as redes sociais:</h1>
+                        <div class="Recursos">
+                            <img src="./assets/img/google.png" hspace="10" class="LogoGoogle" alt="Entre com sua conta do Google">
+                            <img src="./assets/img/facebook.png" hspace="10" class="LogoFacebook" alt="Entre com sua conta do Facebook">
+                            <img src="./assets/img/linkedin.png" hspace="10" class="LogoLinkedin" alt="Entre com sua conta do LinkedIn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+    </form>
+    
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>
