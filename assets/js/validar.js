@@ -25,11 +25,9 @@ function validar() {
         else {
             alert("Registrado com sucesso!")
             let acesso = true
-            document.addEventListener('submit', salvar) 
+            document.addEventListener('submit', salvar)
+            window.location.href = "../teladeloginla.html" 
         }   
-    }
-    if(acesso == true){
-        window.location.href = "../teladeloginla.html" 
     }
 
     
