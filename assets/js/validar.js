@@ -26,7 +26,6 @@ function validar() {
             alert("Registrado com sucesso!")
             let acesso = true
             document.addEventListener('submit', salvar)
-            window.location.href = "../teladeloginla.html" 
         }   
     }
 
