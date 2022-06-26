@@ -328,7 +328,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url("./assets/img/bg-empresas.png") no-repeat;
+    background: url("../img/bg-empresas.png") no-repeat;
     background-size: 100%;
     text-align: center;
 }
