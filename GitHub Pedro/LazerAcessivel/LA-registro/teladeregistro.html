@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleregistro.css">
-    <script src="validar.js">
-    </script>
+    <script src="validar.js"></script>
+    <script src="main.js"></script>
+    <script src="../LA-login/login.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <title>Registro | Lazer Acessível</title>
 </head>
 
@@ -39,8 +42,8 @@
                         <input type="password" placeholder="Confirme sua senha" minlength="6" maxlength="20" id="confirm_password" name="repSenha" class="input">
                         <br>
                     </div>
-                    <input type="submit" class="botao-login" value="cadastrar" name="submit" onclick="validar()">
-                    <p class="Other">Já possui uma conta? <a href="C:\Users\ertal\Desktop\LazerAcessivel\LA-login\teladeloginla.html" class="link-login" name="linkLogin">Clique aqui</a></p>
+                    <input type="submit" class="botao-login" value="cadastrar" name="submit" onclick="validar()" onclick="salvar()">
+                    <p class="Other">Já possui uma conta? <a href="../LA-login/teladeloginla.html" class="link-login" name="linkLogin">Clique aqui</a></p>
                     <div class="Final">
                         <h1 class="Other">Acesse com as redes sociais:</h1>
                         <div class="Recursos">
