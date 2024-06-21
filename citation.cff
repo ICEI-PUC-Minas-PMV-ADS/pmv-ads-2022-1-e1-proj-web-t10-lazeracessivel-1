@@ -1,0 +1,29 @@
+message: Please cite this software using these metadata.
+title: Lazer Acessível
+authors:
+  - family-names: de Assis Oliveira
+    given-names:  Rafael
+  - family-names: Rodrigues Pinto
+    given-names:  Mauricio
+  - family-names: Luis Costa Moreira
+    given-names:  César
+  - family-names: Delareti Simões
+    given-names:  Douglas
+  - family-names: Agnes Massensini Pereira
+    given-names:  Karinne
+  - family-names: Henrique Ertal de Oliveira
+    given-names:  Pedro
+  - family-names: Ellem Teixeira Ildefonso
+    given-names:  Sarah
+  - name-suffix:  Professor
+    affiliation:  PUC Minas
+    family-names: Carvalho Monteiro Ferreira
+    given-names:  Daniela
+  keywords:
+  - Lazer
+  - Acessibilidade
+  - Deficiência
+  - Espaços Públicos
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t10-lazeracessivel-1
+version: 1.0.0
+date-released: 2022-06-01
